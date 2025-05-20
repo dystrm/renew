@@ -1,0 +1,33 @@
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+// playlist
+$(document).on("click", ".playlist_btn", function () {
+    $("#playlistContainer").load("modal.html #playlistModal", function () {
+        $("#playlistContainer").addClass("show");
+        $("body").addClass("scroll-lock");
+    });
+});
+
+$(document).on("click", ".main_btn.ico_click", function () {
+  if (isMobileDevice()) {
+    // 모바일인 경우
+    $("#oneclickMOContainer").load("modal.html #oneclickMOModal", function () {
+      $("#oneclickMOContainer").addClass("show");
+      $("body").addClass("scroll-lock");
+    });
+  } else {
+    // PC인 경우
+    $("#oneclickPCContainer").load("modal.html #oneclickPCModal", function () {
+      $("#oneclickPCContainer").addClass("show");
+      $("body").addClass("scroll-lock");
+    });
+  }
+});
+
+// modal close
+$(document).on("click", ".modal_close_btn", function () {
+    $(".modal").removeClass("show").empty();
+    $("body").removeClass("scroll-lock");
+});
