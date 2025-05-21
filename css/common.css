@@ -1086,7 +1086,7 @@ body.scroll-lock {
           flex-direction: row;
   padding: 8px 10px;
   background: rgba(0, 0, 0, 0.04);
-  width: 140px;
+  width: calc(33.3333333333% - 12px);
   border-radius: 6px;
   font-family: "Pretendard Variable";
   font-weight: 500;
