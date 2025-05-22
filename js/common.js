@@ -10,6 +10,22 @@ $(document).on("click", ".playlist_btn", function () {
     });
 });
 
+//radio 
+$(document).on("click", ".main_btn.ico_radio", function () {
+    $("#oneclickRadioContainer").load("modal.html #oneclickRadioModal", function () {
+        $("#oneclickRadioContainer").addClass("show");
+        $("body").addClass("scroll-lock");
+
+        // 모바일 여부에 따라 pc_txt 처리
+        if (isMobileDevice()) {
+            $(".pc_txt").hide();
+        } else {
+            $(".pc_txt").show();
+        }
+    });
+});
+
+
 $(document).on("click", ".main_btn.ico_click", function () {
     if (isMobileDevice()) {
         // 모바일인 경우
