@@ -70,3 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const el = document.querySelector('.footer_wrapper p:last-child');
     if (el) el.textContent = 'Last Update : ' + formatted;
 });
+
+
+//cash
+$(document).ready(function () {
+    const melonLink = $(".main_btn.ico_coin");
+
+    if (isMobileDevice()) {
+        melonLink.attr("href", "https://m2.melon.com/buy/meloncash/charge.htm");
+    } else {
+        melonLink.attr("href", "https://www.melon.com/buy/meloncash/charge.htm");
+    }
+});
