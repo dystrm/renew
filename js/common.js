@@ -82,3 +82,12 @@ $(document).ready(function () {
         melonLink.attr("href", "https://www.melon.com/buy/meloncash/charge.htm");
     }
 });
+
+//gift
+$(document).on("click", ".main_btn.ico_present", function (e) {
+    e.preventDefault();
+
+    const pcUrl = "https://www.melon.com/mymusic/messagepresent/mymusicpresent_insert.htm";
+    
+    window.open(pcUrl, "_blank");
+});
