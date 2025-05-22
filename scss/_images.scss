@@ -115,3 +115,17 @@
     @include iconThem($name:'ico_chart');
 }
 
+@mixin ico_mbc {
+    @include icon($name:'ico_mbc', $format: 'png');
+    background-size: 100%;
+}
+
+@mixin ico_sbs {
+    @include icon($name:'ico_sbs', $format: 'jpg');
+    background-size: 100%;
+}
+
+@mixin ico_kbs {
+    @include icon($name:'ico_kbs', $format: 'png');
+    background-size: 100%;
+}

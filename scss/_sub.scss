@@ -237,6 +237,56 @@
                             max-width: 780px;
                             margin: 0 auto;
                         }
+
+                        .radio_box {
+                            @include flex(center, center, 12px);
+                            width: 100%;
+                            max-width: 780px;
+                            margin: 0 auto 20px;
+
+                            a {
+                                position: relative;
+                                @include flex(center, flex-start, 6px);
+                                padding: 4px 10px;
+                                background: $main-btn-bg-color;
+                                height: 48px;
+                                border-radius: 4px;
+                                @include ftM;
+                                font-size: rem(14);
+                                color: $ft-main-color;
+                                transition: 0.3s all ease-in-out;
+                                width: calc(100% / 3 - 6px);
+
+                                &::before {
+                                    @include content;
+                                    width: 26px;
+                                    height: 26px;
+                                    border-radius: 6px;
+                                }
+
+                                &:hover {
+                                    background: $main-btn-hv-color;
+                                }
+
+                                &.mbc {
+                                    &::before {
+                                        @include ico_mbc;
+                                    }
+                                }
+
+                                &.sbs {
+                                    &::before {
+                                        @include ico_sbs;
+                                    }
+                                }
+
+                                &.kbs {
+                                    &::before {
+                                        @include ico_kbs;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

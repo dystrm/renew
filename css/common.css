@@ -2121,6 +2121,78 @@ body.scroll-lock {
   max-width: 780px;
   margin: 0 auto;
 }
+.contents .sub_contents .category_box .box .image_box > div .radio_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto 20px;
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.04);
+  height: 48px;
+  border-radius: 4px;
+  font-family: "Pretendard Variable";
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #222222;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  width: calc(33.3333333333% - 6px);
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a.mbc::before {
+  background: url("../images/icon/ico_mbc.png") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a.sbs::before {
+  background: url("../images/icon/ico_sbs.jpg") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
+.contents .sub_contents .category_box .box .image_box > div .radio_box a.kbs::before {
+  background: url("../images/icon/ico_kbs.png") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
 
 @media only screen and (max-width: 768px) {
   .contents .sub_nav .menu_depth_01 .flex {
@@ -2337,6 +2409,76 @@ body.scroll-lock {
 .modal .modal_contents.type_click .btn_box div.melon a {
   width: calc(25% - 6px);
 }
+.modal .modal_contents.type_click .btn_box.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.modal .modal_contents.type_click .btn_box.radio a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.04);
+  height: 48px;
+  border-radius: 4px;
+  font-family: "Pretendard Variable";
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #222222;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  width: calc(33.3333333333% - 6px);
+}
+.modal .modal_contents.type_click .btn_box.radio a::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+}
+.modal .modal_contents.type_click .btn_box.radio a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.modal .modal_contents.type_click .btn_box.radio a.mbc::before {
+  background: url("../images/icon/ico_mbc.png") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
+.modal .modal_contents.type_click .btn_box.radio a.sbs::before {
+  background: url("../images/icon/ico_sbs.jpg") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
+.modal .modal_contents.type_click .btn_box.radio a.kbs::before {
+  background: url("../images/icon/ico_kbs.png") no-repeat center;
+  font-size: 0;
+  background-size: 100%;
+}
 .modal .modal_contents .modal_head {
   position: relative;
   display: -webkit-box;
@@ -2361,6 +2503,15 @@ body.scroll-lock {
   font-weight: 500;
   font-size: 1.6rem;
   color: #222222;
+}
+.modal .modal_contents .modal_head .modal_tit .pc_txt {
+  display: block;
+  font-size: 1.2rem;
+  color: #e01b1b;
+  margin-top: 12px;
+}
+.modal .modal_contents .modal_head .modal_tit .pc_txt::before {
+  content: "*";
 }
 .modal .modal_contents .modal_head .modal_close_btn {
   font-size: 0;
